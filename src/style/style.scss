@@ -1,7 +1,643 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;500;700&family=Montserrat:wght@400;700;900&display=swap");
+
+$dark: #333333;
+$modal-back: rgba(51, 51, 51, 0.75);
+$stroke-dark: #8b8b8b;
+$stroke-light: #d5d5d5;
+$light: #fafafa;
+$buttons: #ffc702;
+$main: #00ca69;
+$active: #ff5c16;
+$inverse: #a93dff;
+
+.bodyM {
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+h1 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+h2 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+}
+h3 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+}
+h4 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+h5 {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 #app {
   width: 100%;
 }
 
 body {
   flex-direction: column;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1110px;
+}
+header {
+  width: 100%;
+  margin-top: 63px;
+  display: flex;
+  a {
+    margin-right: 150px;
+    text-decoration: none;
+    color: $stroke-dark;
+    font-family: "Exo 2", sans-serif;
+    font-size: 20px;
+    &:hover {
+      color: $dark;
+      border-bottom: 1px solid green;
+      margin-bottom: -13px;
+    }
+  }
+  a:first-child {
+    margin-left: 21.5px;
+  }
+}
+.beatcup {
+  width: 1110px;
+  margin-top: 63px;
+
+  .main-card {
+    border-radius: 5px;
+    background-color: $main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .circle {
+      margin-top: 25px;
+      width: 80px;
+      border-radius: 50%;
+      height: 80px;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .info {
+      width: 875px;
+      font-family: "Exo 2";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      text-align: center;
+      color: #fafafa;
+      padding-bottom: 50px;
+    }
+  }
+}
+.main-list {
+  .card {
+    padding: 20px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    &:hover {
+      color: $light;
+      background-color: $inverse;
+      h3 {
+        color: $light;
+      }
+    }
+
+    h3 {
+      color: $stroke-dark;
+      text-align: center;
+    }
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
+.ass {
+  margin-bottom: 10px;
+}
+.process {
+  display: flex;
+  justify-content: space-between;
+  .button {
+    width: 311px;
+    padding: 0 20px;
+    background-color: $dark;
+    height: 182px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $light;
+    border-radius: 10px;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+    background-color: $light;
+    border: 1px solid $dark;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    h4 {
+      color: $dark;
+    }
+  }
+  h4 {
+    margin: 10px 0;
+  }
+  p {
+    text-align: center;
+    font-weight: 300;
+  }
+}
+.stroke {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto;
+  max-width: 2500px;
+  width: 100%;
+  background-color: $main;
+  padding: 20px, 10px, 20px, 10px;
+  height: 76px;
+  text-align: center;
+  h1 {
+    text-align: center;
+    color: $light;
+  }
+}
+.goal {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1006px;
+  .bodyM {
+    text-align: center;
+  }
+}
+.card-list {
+  margin: 0 auto;
+  margin-top: 35px;
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  .card-statistics {
+    padding: 20px;
+    border: 1px solid $stroke-light;
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      margin: 10px 0;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}
+.path {
+  .path-h {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  width: 1110px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  .path-wrapper {
+    display: flex;
+  }
+  .story-card {
+    display: flex;
+    flex-direction: column;
+    .story-item {
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 50px;
+      text-align: center;
+
+      .year {
+        padding: 5px, 30px, 5px, 30px;
+        background-color: $main;
+        color: $light;
+        width: 116px;
+        border-radius: 10px;
+
+        h2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .path-start {
+        color: $main;
+        margin: 10px 0;
+        text-align: center;
+      }
+      .bodyM {
+        color: $main;
+        text-align: center;
+      }
+      .two {
+        color: $dark;
+      }
+      .second {
+        background-color: $dark;
+      }
+    }
+  }
+}
+
+.tariffs {
+  .another {
+    background-color: $inverse;
+  }
+
+  .tariffs-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1100px;
+    margin-bottom: 50px;
+
+    .tariff {
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      h3,
+      .bodyM {
+        border-bottom: 1px solid $main;
+        padding: 10px 0;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .license,
+      .and-another {
+        margin: 20px 0;
+        padding: 10px 0;
+      }
+
+      .tariff-title {
+        margin-bottom: 10px;
+        width: 223px;
+        background-color: $main;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $light;
+
+        .tarif-h {
+          color: $light;
+        }
+
+        h3 {
+          border: none;
+        }
+      }
+
+      .button {
+        margin-top: 39px;
+        background-color: $buttons;
+        width: 108px;
+        height: 38px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &:first-child {
+        .button {
+          background: transparent;
+          color: transparent;
+          user-select: none;
+        }
+        h3,
+        .bodyM {
+          width: 250px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: center;
+          font-weight: 700;
+        }
+
+        &:first-child .tariff-title {
+          border: none;
+          background: transparent;
+          user-select: none;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+.uno {
+  background-color: $dark;
+}
+
+
+.custom-tariff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 1110px;
+  background-color: $main;
+  margin: 0 auto;
+
+  h1 {
+    margin-bottom: 40px;
+    color: $light;
+    margin-top: 30px;
+  }
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+  .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    color: $light;
+  }
+  .bodyM {
+    text-align: center;
+    white-space: nowrap;
+  }
+  .input-first {
+    border: none;
+    background-color: $main;
+    border-bottom: 1px solid $light;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $light;
+  }
+  .input-first:focus {
+    outline: none;
+  }
+
+  .button {
+    margin-top: 55px;
+    width: 287px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $light;
+    border: 1px solid $light;
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+}
+.behind {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1100px;
+  text-align: center;
+}
+
+.contacts {
+  width: 1110px;
+  margin: 0 auto;
+
+
+  .form {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid $dark;
+    border-radius: 20px;
+    width: 440px;
+    height: 442px;
+  }
+
+  .bodyM {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .frame {
+    margin: 0 auto;
+  }
+
+  .tab-picker {
+    margin-top: 20px;
+    display: flex;
+  }
+
+  .input-first {
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid $active;
+    padding: 10px 0;
+    color: $active;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-left: 30px;
+  }
+
+  .input-second {
+    margin-right: 30px;
+    width: 180px;
+    border: none;
+    border-bottom: 1px solid $stroke-dark;
+    padding: 10px 0;
+    color: $stroke-dark;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .frame-0 {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .input-third {
+    width: 79%;
+    border: 1px solid $dark;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Exo 2;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .button{
+    background-color: $buttons;
+    width: 80%;
+    margin-left: 30px;  
+    border-radius: 10px;
+    height: 34px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px 8px 15px;
+  }
+}
+
+.input-fourth{
+  width: 85%;
+  height: 120px;
+  border-radius: 10px;
+  margin-left: 30px;  
+  margin-top: 20px;
+  font-family: Exo 2;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8B8B8B
+}
+.main-h{
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.products{
+ 
+  margin: 0 auto;
+
+  .product-list{
+    width: 1110px;
+    display: flex;
+    .beta{
+      background-color: $dark;
+    }
+    .gamma{
+      background-color: $inverse;
+    }
+  }
+  .dos{
+    margin-top: 30px;
+  }
+  .product{
+    background-color: $main;
+    width: 33.3%;
+    color:$light;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+      text-align: center;
+      margin-top: 30px;
+    }
+    h1{
+      margin: 51px 0;
+    }
+    .button{
+      width: 330px;
+      border: 1px solid $light;
+      text-align: center;
+      margin-bottom: 30px;
+     
+      h3{
+        margin: 0;
+      padding: 15px;
+      }
+    }
+    .h3-div{
+      width: 330px;
+      height: 48px;
+    }
+
+  }
+
+}
+footer{
+  margin-top: 80px;
+ background-color: $buttons;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 186px;
+ .wrapper{
+  width: 1110px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ .bodyM{
+  margin: 10px;
+ }
+ }
 }
